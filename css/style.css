@@ -457,7 +457,9 @@ footer{
     }
     .contact-me::after{
         width: 400px;
-        top: -60%;
+        height: 100%;
+        top: -50%;
+        transform: rotate(20deg);
     }
     form .input{
         width: 100%;
@@ -537,7 +539,9 @@ footer{
     }
     .contact-me::after{
         width: 400px;
-        top: -60%;
+        height: 100%;
+        top: -30%;
+        transform: rotate(35deg);
     }
     form .input{
         width: 100%;
@@ -616,8 +620,11 @@ footer{
         width: 100%;
     }
     .contact-me::after{
-        width: 400px;
-        top: -60%;
+        width: 600px;
+        height: 100%;
+        top: -25%;
+        left: -200px;
+        transform: rotate(25deg);
     }
     form .input{
         width: 100%;
