@@ -464,6 +464,9 @@ footer{
     form .input{
         width: 100%;
     }
+    form .form-social{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 575px) and (max-width: 767px){
