@@ -356,7 +356,6 @@ form .form-social a i{
 }
 
 form .form-social a i:hover{
-    /* transform: scale(1.2); */
     text-shadow: 0 0 10px var(--lightColor), 0 0 20px var(--lightColor), 0 0 30px var(--lightColor),
     0 0 50px var(--lightColor);
 }
@@ -370,7 +369,6 @@ footer{
 }
 
 /* menu icon */
-
 #menu{
     display: none;
     user-select: none;
