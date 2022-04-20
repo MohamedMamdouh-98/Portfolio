@@ -157,7 +157,7 @@ span{
 /* end home */
 
 .about{
-    padding: 0 var(--padding);
+    padding: 100px var(--padding);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,7 +181,7 @@ span{
 
 /* end about */
 .services{
-    padding: 30px var(--padding);
+    padding: 100px var(--padding);
     background-color: var(--bgColor-1)
 }
 
@@ -211,7 +211,7 @@ span{
 /* end of services */
 
 .skills{
-    padding: 30px var(--padding);
+    padding: 100px var(--padding);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -251,8 +251,111 @@ span{
     max-width: 100%;
 }
 /* end skills */
-footer{
+
+.contact-me{
+    padding: 30px var(--padding);
     background-color: var(--bgColor-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-me::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primaryColor);
+    width: 60%;
+    height: 155%;
+    left: -20%;
+    top: -50%;
+    border-radius: 50%;
+    transition: 3s;
+    z-index: 1;
+}
+.new-here{
+    width: 45%;
+    z-index: 2;
+}
+
+.new-here .text{
+    text-align: center;
+}
+
+.new-here .text .btn{
+    background-color: transparent;
+    color: var(--lightColor);
+    border-color: var(--lightColor);
+}
+
+.new-here .text p{
+    margin-bottom: 20px
+}
+
+.contact-me .contact-image img{
+    width: 100%
+}
+
+form{
+    text-align: center;
+    width: 45%
+}
+
+form p{
+    margin: 20px 0;
+}
+
+form .btn{
+    padding: 5px 35px
+}
+
+form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    width: 80%;
+    margin: 30px auto;
+    align-items: center;
+}
+
+form .input input{
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    caret-color: var(--primaryColor);
+    border: 3px solid var(--secondaryColor);
+}
+
+form .form-social{
+    width: 80%;
+    margin: 20px auto;
+}
+
+form .form-social a i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid var(--primaryColor);
+    transition: var(--transition)
+}
+
+form .form-social a i:hover{
+    transform: scale(1.2);
+}
+
+/* end contact */
+
+footer{
+    background-color: var(--bgColor-2);
     text-align: center;
     padding: 30px 0;
 }
@@ -342,6 +445,23 @@ footer{
         display: block;
         z-index: 20000;
     }
+    .contact-me{
+        flex-direction: column;
+    }
+
+    .contact-me .new-here{
+        width: 100%;
+    }
+    .contact-me form{
+        width: 100%;
+    }
+    .contact-me::after{
+        width: 400px;
+        top: -60%;
+    }
+    form .input{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 575px) and (max-width: 767px){
@@ -405,6 +525,23 @@ footer{
         display: block;
         z-index: 20000;
     }
+    .contact-me{
+        flex-direction: column;
+    }
+
+    .contact-me .new-here{
+        width: 100%;
+    }
+    .contact-me form{
+        width: 100%;
+    }
+    .contact-me::after{
+        width: 400px;
+        top: -60%;
+    }
+    form .input{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -467,5 +604,22 @@ footer{
     #menu{
         display: block;
         z-index: 20000;
+    }
+    .contact-me{
+        flex-direction: column;
+    }
+
+    .contact-me .new-here{
+        width: 100%;
+    }
+    .contact-me form{
+        width: 100%;
+    }
+    .contact-me::after{
+        width: 400px;
+        top: -60%;
+    }
+    form .input{
+        width: 100%;
     }
 }
