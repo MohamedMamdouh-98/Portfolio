@@ -53,6 +53,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: var(--bgColor-1)
 }
 
 nav ul li {
@@ -379,6 +385,46 @@ footer{
     border-radius: 9px;
     margin-bottom: 5px;
     transition: 1s;
+}
+
+/* start up */
+
+.up{
+    position: fixed;
+    bottom: 50px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    display: grid;
+    place-items: center;
+    z-index: 10000;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.up:hover i{
+    animation: top-bottom 0.5s infinite linear;
+}
+
+.show{
+    right: 20px;
+}
+
+@keyframes top-bottom{
+    0%{
+        transform: translateY(0)
+    }
+
+    20%{
+        transform: translateY(5px)
+    }
+    40%{
+        transform: translateY(-5px)
+    }
+    100%{
+        transform: translateY(0)
+    }
 }
 
 /* start media queries */
