@@ -103,7 +103,7 @@ span{
 
 .container-texts{
     position: relative;
-    bottom: 70px;
+    top: 40px
 }
 .content .container-texts h1{
     font-size: var(--font-size);
