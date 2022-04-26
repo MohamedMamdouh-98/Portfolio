@@ -1,3 +1,6 @@
+// wow.js
+new WOW().init();
+
 const menu = document.getElementById('action');
 const icon = document.getElementById('menu');
 const up = document.getElementById('up');
